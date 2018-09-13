@@ -14,7 +14,7 @@ class BitmapImage {
 public:
     BitmapImage(int w = 1, int h = 1);
 
-    virtual ~BitmapImage();
+    ~BitmapImage();
 
     T getPixel(int x, int y);
 
@@ -113,8 +113,6 @@ template<typename T>
 void BitmapImage<T>::setHeight(int height) {
     BitmapImage::height = height;
 }
-
-
 
 
 #endif //IMAGE_CONVOLUTION_BITMAPIMAGE_H
